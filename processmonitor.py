@@ -1,37 +1,38 @@
 import psutil
 import time
-import os
 from datetime import datetime
+from email_notifier import notify_suspicious_process
 
-# List of suspicious processes to monitor
 suspicious_processes = ["powershell.exe", "ftp.exe"]
-
-# Log file
 log_file = "security_monitor.log"
+monitoring = True
 
 def log_event(event):
-    """Writes the event to the log file""
     with open(log_file, "a") as log:
-        log.write(f"{datetime.now()} - {event}")
+        log.write(f"{datetime.now()} - {event}\n")
 
 def kill_process(process_name):
-    """Kills the process with the specified name and logs the event""
     for proc in psutil.process_iter(['pid', 'name']):
         if proc.info['name'].lower() == process_name:
             proc.kill()
-            log_event(f "Killed process: {process_name}")
+            log_event(f"Killed process: {process_name}")
+            notify_suspicious_process(process_name)
 
 def monitor_processes():
-    """Monitors running processes and kills suspicious ones""
-    while True:
+    global monitoring
+    while monitoring:
         for proc_name in suspicious_processes:
             kill_process(proc_name)
         time.sleep(1)
 
+def stop_monitoring():
+    global monitoring
+    monitoring = False
+
 if __name__ == "__main__":
     try:
-        log_event("Monitoring of suspicious processes started.")
+        log_event("Started monitoring suspicious processes.")
         monitor_processes()
     except KeyboardInterrupt:
-        log_event("Monitoring script stopped.")
-        print("Stopped monitoring script.")
+        log_event("Stopped monitoring script.")
+        print("Stopping the monitoring script.")
