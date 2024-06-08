@@ -4,47 +4,18 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date/Bulli77/AntyPayload-SecureProcessMonitor)
 
 <p align="center">
-  <img src="https://i.imgur.com/LZXx1Ec.png" alt="SecureProcessMonitor Logo" width="265px">
+  <img src="assets/logo.png" alt="SecureProcessMonitor Logo" width="200px">
 </p>
 
-## Introduction 🥷🏻
+## Project Description
 
-In today's world, with the increasing number of cyber threats, protecting our computer systems has become a top priority. One of the common threats is unauthorized scripts and processes, such as keyloggers and illegal data transfers to external servers. Projects like SecureProcessMonitor address these threats by providing an effective tool to monitor and eliminate suspicious processes.
-
-# Project Objective
-
-SecureProcessMonitor is a Python script designed to enhance system security by monitoring and terminating suspicious processes such as powershell.exe and ftp.exe. The project aims to provide users with a tool that automatically detects and stops potentially dangerous activities before they can cause harm.
-
-# Threats Addressed by the Project
-
-- Keyloggers: Keyloggers are malicious software that records keystrokes, allowing cybercriminals to obtain sensitive information such as passwords and personal data. SecureProcessMonitor detects and stops keylogger processes before they can - transmit collected data.
-
-- Unauthorized Data Transfers: Processes like ftp.exe can be used to transfer files with sensitive data to external servers. Our tool monitors and blocks such activities, preventing data leaks.
-
-PowerShell Scripts: PowerShell is a powerful tool in Windows systems that can be used for both legitimate and malicious purposes. SecureProcessMonitor monitors and stops suspicious PowerShell scripts that could modify system settings or install malware.
-
-# Importance of Proper Protection
-
-Proper protection of computer systems is crucial for several reasons:
-
-- Protection of Personal Data: In the era of GDPR and other data protection regulations, securing personal information is not only a legal obligation but also a moral one.
-
-- Prevention of Data Leaks: Corporate and personal data can be worth a fortune on the black market. Proper protection prevents leaks that can have catastrophic financial and reputational consequences.
-
-- Operational Security: Cyber attacks can disrupt the normal functioning of systems and organizations, leading to operational interruptions and significant financial losses.
-
-- User and Customer Trust: Companies that can ensure high security standards build trust among their customers and users, which is key to long-term success.
-
-
-SecureProcessMonitor is a project that responds to contemporary cyber threats by providing a tool to monitor and terminate suspicious processes. Proper protection of computer systems is essential in the face of increasing threats and requires the right tools and strategies to ensure data and operational security. With SecureProcessMonitor, users can feel safer knowing that their systems are protected against unauthorized activities.
-
-## Project Description & Let's GO!
-
-SecureProcessMonitor is a Python script designed to enhance system security by monitoring and terminating suspicious processes such as `powershell.exe` and `ftp.exe`. The script logs events to `security_monitor.log` and provides instructions for converting the script into an executable file.
+SecureProcessMonitor is a Python script designed to enhance system security by monitoring and terminating suspicious processes such as `powershell.exe` and `ftp.exe`. The script logs events to `security_monitor.log` and provides instructions for creating an executable file.
 
 ## Project Contents
 
-- `security_monitor.py`: The main script for monitoring processes.
+- `src/security_monitor.py`: The main script for monitoring processes.
+- `src/email_notifier.py`: A script to send email notifications when a suspicious process is detected.
+- `src/gui.py`: A simple GUI for starting and stopping the monitoring process.
 - `requirements.txt`: A file listing the required libraries.
 - `README.md`: This file with instructions.
 
@@ -57,7 +28,7 @@ SecureProcessMonitor is a Python script designed to enhance system security by m
     pip install -r requirements.txt
     ```
 
-3. **Run the script**: To start the script, enter the following command in the command prompt:
+3. **Run the script**: To start the script, navigate to the `src` directory and enter the following command in the command prompt:
     ```sh
     python security_monitor.py
     ```
@@ -69,7 +40,7 @@ SecureProcessMonitor is a Python script designed to enhance system security by m
     pip install pyinstaller
     ```
 
-2. **Create the executable**: Navigate to the project directory and run:
+2. **Create the executable**: Navigate to the `src` directory and run:
     ```sh
     pyinstaller --onefile security_monitor.py
     ```
