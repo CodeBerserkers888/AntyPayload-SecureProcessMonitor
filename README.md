@@ -4,7 +4,7 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date/Bulli77/AntyPayload-SecureProcessMonitor)
 
 <p align="center">
-  <img src="https://i.imgur.com/LZXx1Ec.png" alt="SecureProcessMonitor Logo" width="256px">
+  <img src="https://i.imgur.com/LZXx1Ec.png" alt="SecureProcessMonitor Logo" width="265px">
 </p>
 
 ## Project Description
@@ -49,3 +49,8 @@ SecureProcessMonitor is a Python script designed to enhance system security by m
 
 An example of what the `security_monitor.log` file might look like:
 
+```plaintext
+2024-06-08 12:00:00 - Started monitoring suspicious processes.
+2024-06-08 12:01:00 - Killed process: powershell.exe
+2024-06-08 12:05:00 - Killed process: ftp.exe
+2024-06-08 12:10:00 - Stopped monitoring script.
