@@ -11,7 +11,7 @@
 
 In today's world, with the increasing number of cyber threats, protecting our computer systems has become a top priority. One of the common threats is unauthorized scripts and processes, such as keyloggers and illegal data transfers to external servers. Projects like SecureProcessMonitor address these threats by providing an effective tool to monitor and eliminate suspicious processes.
 
-#Project Objective
+# Project Objective
 
 SecureProcessMonitor is a Python script designed to enhance system security by monitoring and terminating suspicious processes such as powershell.exe and ftp.exe. The project aims to provide users with a tool that automatically detects and stops potentially dangerous activities before they can cause harm.
 
