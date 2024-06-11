@@ -117,7 +117,7 @@ HTTP error 401 for prompt `features`
 
 Ensure you have the following dependencies installed on your system:
 
-* **Python**: `version x.y.z`
+* **Python**: `version 1.0.0`
 
 ### ⚙️ Installation
 
