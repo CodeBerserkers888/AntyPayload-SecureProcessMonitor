@@ -6,53 +6,211 @@
 <p align="center">
   <img src="assets/logo.png" alt="SecureProcessMonitor Logo" width="200px">
 </p>
+<p align="center">
 
-## Project Description
+</p>
+<p align="center">
+    <h1 align="center">ANTYPAYLOAD-SECURE PROCESS MONITOR</h1>
+</p>
+<p align="center">
+    <em>HTTP error 401 for prompt `slogan`</em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/github/license/CodeBerserkers888/AntyPayload-SecureProcessMonitor?style=flat&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/CodeBerserkers888/AntyPayload-SecureProcessMonitor?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/CodeBerserkers888/AntyPayload-SecureProcessMonitor?style=flat&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/CodeBerserkers888/AntyPayload-SecureProcessMonitor?style=flat&color=0080ff" alt="repo-language-count">
+<p>
+<p align="center">
+		<em>Developed with the software and tools below.</em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
+	<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF.svg?style=flat&logo=GitHub-Actions&logoColor=white" alt="GitHub%20Actions">
+</p>
+<hr>
 
-SecureProcessMonitor is a Python script designed to enhance system security by monitoring and terminating suspicious processes such as `powershell.exe` and `ftp.exe`. The script logs events to `security_monitor.log` and provides instructions for creating an executable file.
+## 🔗 Quick Links
 
-## Project Contents
+> - [📍 Overview](#-overview)
+> - [📦 Features](#-features)
+> - [📂 Repository Structure](#-repository-structure)
+> - [🧩 Modules](#-modules)
+> - [🚀 Getting Started](#-getting-started)
+>   - [⚙️ Installation](#️-installation)
+>   - [🤖 Running AntyPayload-SecureProcessMonitor](#-running-AntyPayload-SecureProcessMonitor)
+>   - [🧪 Tests](#-tests)
+> - [🛠 Project Roadmap](#-project-roadmap)
+> - [🤝 Contributing](#-contributing)
+> - [📄 License](#-license)
+> - [👏 Acknowledgments](#-acknowledgments)
 
-- `src/security_monitor.py`: The main script for monitoring processes.
-- `src/email_notifier.py`: A script to send email notifications when a suspicious process is detected.
-- `src/gui.py`: A simple GUI for starting and stopping the monitoring process.
-- `requirements.txt`: A file listing the required libraries.
-- `README.md`: This file with instructions.
+---
 
-## Installation Instructions
+## 📍 Overview
 
-1. **Install Python**: Ensure Python is installed on your computer. Download it from [python.org](https://www.python.org/).
+HTTP error 401 for prompt `overview`
 
-2. **Install required libraries**: Open a command prompt and run:
-    ```sh
-    pip install -r requirements.txt
-    ```
+---
 
-3. **Run the script**: To start the script, navigate to the `src` directory and enter the following command in the command prompt:
-    ```sh
-    python security_monitor.py
-    ```
+## 📦 Features
 
-## Creating an Executable File
+HTTP error 401 for prompt `features`
 
-1. **Install pyinstaller**: Open a command prompt and run:
-    ```sh
-    pip install pyinstaller
-    ```
+---
 
-2. **Create the executable**: Navigate to the `src` directory and run:
-    ```sh
-    pyinstaller --onefile security_monitor.py
-    ```
+## 📂 Repository Structure
 
-3. **Executable file**: After the process is complete, the executable file will be located in the `dist` folder. It will be named `security_monitor.exe` on Windows.
+```sh
+└── AntyPayload-SecureProcessMonitor/
+    ├── .github
+    │   └── workflows
+    │       └── python-package.yml
+    ├── LICENSE
+    ├── README.md
+    ├── assets
+    │   └── logo.png
+    ├── processmonitor.py
+    ├── requirements.txt
+    └── src
+        ├── email_notifier.py
+        ├── gui.py
+        └── processmonitor.py
+```
 
-## Example Log File
+---
 
-An example of what the `security_monitor.log` file might look like:
+## 🧩 Modules
 
-```plaintext
-2024-06-08 12:00:00 - Started monitoring suspicious processes.
-2024-06-08 12:01:00 - Killed process: powershell.exe
-2024-06-08 12:05:00 - Killed process: ftp.exe
-2024-06-08 12:10:00 - Stopped monitoring script.
+<details closed><summary>.</summary>
+
+| File                                                                                                                     | Summary                                       |
+| ---                                                                                                                      | ---                                           |
+| [processmonitor.py](https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor/blob/master/processmonitor.py) | HTTP error 401 for prompt `processmonitor.py` |
+| [requirements.txt](https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor/blob/master/requirements.txt)   | HTTP error 401 for prompt `requirements.txt`  |
+
+</details>
+
+<details closed><summary>.github.workflows</summary>
+
+| File                                                                                                                                         | Summary                                                          |
+| ---                                                                                                                                          | ---                                                              |
+| [python-package.yml](https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor/blob/master/.github/workflows/python-package.yml) | HTTP error 401 for prompt `.github/workflows/python-package.yml` |
+
+</details>
+
+<details closed><summary>src</summary>
+
+| File                                                                                                                         | Summary                                           |
+| ---                                                                                                                          | ---                                               |
+| [email_notifier.py](https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor/blob/master/src/email_notifier.py) | HTTP error 401 for prompt `src/email_notifier.py` |
+| [gui.py](https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor/blob/master/src/gui.py)                       | HTTP error 401 for prompt `src/gui.py`            |
+| [processmonitor.py](https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor/blob/master/src/processmonitor.py) | HTTP error 401 for prompt `src/processmonitor.py` |
+
+</details>
+
+---
+
+## 🚀 Getting Started
+
+***Requirements***
+
+Ensure you have the following dependencies installed on your system:
+
+* **Python**: `version x.y.z`
+
+### ⚙️ Installation
+
+1. Clone the AntyPayload-SecureProcessMonitor repository:
+
+```sh
+git clone https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor
+```
+
+2. Change to the project directory:
+
+```sh
+cd AntyPayload-SecureProcessMonitor
+```
+
+3. Install the dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+### 🤖 Running AntyPayload-SecureProcessMonitor
+
+Use the following command to run AntyPayload-SecureProcessMonitor:
+
+```sh
+python main.py
+```
+
+### 🧪 Tests
+
+To execute tests, run:
+
+```sh
+pytest
+```
+
+---
+
+## 🛠 Project Roadmap
+
+- [X] `► INSERT-TASK-1`
+- [ ] `► INSERT-TASK-2`
+- [ ] `► ...`
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here are several ways you can contribute:
+
+- **[Submit Pull Requests](https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor/issues)**: Submit bugs found or log feature requests for Antypayload-secureprocessmonitor.
+
+<details closed>
+    <summary>Contributing Guidelines</summary>
+
+1. **Fork the Repository**: Start by forking the project repository to your GitHub account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a Git client.
+   ```sh
+   git clone https://github.com/CodeBerserkers888/AntyPayload-SecureProcessMonitor
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to GitHub**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+
+Once your PR is reviewed and approved, it will be merged into the main branch.
+
+</details>
+
+---
+
+## 📄 License
+
+This project is protected under the MIT License.
+---
+
+## 👏 Acknowledgments
+
+- List any resources, contributors, inspiration, etc. here.
+
+[**Return**](#-quick-links)
+
+---
